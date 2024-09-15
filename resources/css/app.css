@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Task.Index */
+
+.details-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    width: 100%;
+    gap: 15px;
+}
+
+.details-container .details-container-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 1rem;
+}
+
+.details-container .details-container-left .my-todo {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.details-container .details-container-left .this-month {
+    color: darkgray;
+}
+
+.details-container .details-container-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 1rem;
+
+}
+
+.details-container .details-container-right .new-task-button {
+    background-color: #e2f1fe;
+    color: #4995ff;
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: 0.5rem 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.details-container .details-container-right .new-task-button:hover {
+    background-color: #4995ff;
+    color: white;
+}
+
+.to-do-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    padding: 1rem;
+}
+
+.to-do-list-container .task-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 1rem;
+}
+
+.to-do-list-container .task-container .task-details-holder {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.to-do-list-container .task-container .task-details-holder .task-details-upper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.to-do-list-container .task-container .task-details-holder .task-details-upper .task-title {
+    font-weight: bold;
+}
+
+.to-do-list-container .task-container .task-details-holder .task-details-upper .task-title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.to-do-list-container .task-container .task-details-holder .task-details-upper .task-priority {
+    margin-left: auto;
+}
+
+.to-do-list-container .task-container .task-details-holder .task-details-lower {
+    display: flex;
+    gap: 10px;
+}
+
+
+.to-do-list-container .task-container .task-details-holder .task-details-lower .task-tag {
+    color: gray;
+}
+
+.to-do-list-container .task-container .task-details-holder .task-details-lower .task-due-date {
+    color: #4995ff;
+    font-weight: bold;
+}
+
+
+
+
+
